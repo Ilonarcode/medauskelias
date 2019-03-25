@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*pradzia*/
+
+@font-face {
+  font-family: Voltaire;
+  src: url('/voltaire/Voltaire-Regular.ttf');
+}
+header {
+    width: 100%;
+    height: 600px;
+    background-image: url('./img/comb1152X648.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.back {
+    width: 100%;
+    height: 600px;
+    background-image: url('./img/bee_1081x742.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+h1 {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-size: 70px;
+    color: #F1E643;
+    font-family: 'Courgette', cursive;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}
+nav{
+    width: 100%;
+    background-image: url('./img/medis1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ul{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    margin: 6px;
+}
+.hexagon {
+    width: 140px;
+    height: 75px;
+    background: #A75A19;
+    position: relative;
+    top: 0px;
+    opacity: 0.7;
+    box-shadow: 2px 0px #400E00;
+    transition: 1s;
+    vertical-align: top;
+}
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 25px solid #A75A19;
+    
+    }
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 25px solid #A75A19;
+    
+    }
+li a {
+    display: block;
+    color: #FFFF;
+    font-family: 'Voltaire';
+    font-weight: 700;
+    font-size: 23px;
+    padding-top: 18px;
+    text-shadow: 1px 2px 2px #000;
+}
+li a:hover{
+    cursor: pointer;
+    color: #0f9c61;
+}
+.hexagon:hover {
+    top: 20px;    
+}
+#main{
+    width: 100%;
+}
+aside{ 
+    width: 27%;
+    height: 1055px;
+    margin: 50px 20px;
+    display: inline-block;
+}
+iframe {
+    width: 100%;
+    height: 1055px;
+}
+section {
+    width: 65%;
+    height: auto;
+    display: inline-block;
+    margin: 50px 20px;
+    padding: 30px;
+    text-align: justify;
+    line-height: 1.8em;  
+}
+aside, section{
+    vertical-align: top;
+}
+section p, .edu {
+    font-family:'Courgette', cursive;
+}
+h2{
+    text-align: center;
+    font-family: 'Handlee',cursive;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px; 
+}
+.edu li{
+    text-align: center;
+    display: block;    
+}
+.edu {
+    border: 5px solid #98cfff;
+}
+
+
+/*Karusele*/
+#myCarousel {
+    height: 400px;
+}
+.item img {
+    display: block;
+    margin: 35px auto; 
+    box-shadow: 5px 5px 15px #273E2D;
+    overflow: hidden;    
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-image: url('./img/medis2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;      
+}
+footer p{
+    width: 212px;
+    margin: 10px auto;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'ZCOOL XiaoWei', serif;
+    position:relative;
+    top: 30%;
+}
+.edu a {
+    color:#98cfff;
+}
+@media screen and (max-width: 1000px) {
+    aside, section {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+}
+    aside {
+        display: none;
+    }
+}  
+
+
+
+
+
+
+
+
